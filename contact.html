@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <title>Stefano Terraplenagem</title>
 
     <link href="https://fonts.googleapis.com/css?family=K2D:400,700|Niramit:300,700" rel="stylesheet">
@@ -35,16 +35,17 @@
     text-align:center;
     font-size:30px;
     box-shadow: 1px 1px 2px #888;
-    z-index:1000;
+ z-index:1000;
    " target="_blank">
-    <i style="margin-top:16px" class="fa fa-whatsapp"></i> </a>
+ <i style="margin-top:16px" class="fa fa-whatsapp"></i> </a>
+
   </head>
   <body>
     
     <header role="banner">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-          <img src="img/logo/LOGO.png"  alt="HTML5 Icon" | style="width:150px;height:120px;">
+          <img src="img/logo/LOGO.png" alt="HTML5 Icon" | style="width:150px;height:120px;">
           <a class="navbar-brand position-absolute" href="index.html"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -80,156 +81,113 @@
     </header>
     <!-- END header -->
     
-    <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url('img/carousel/photo1.jpg');">  
+    <section class="inner-page">
+      <div class="slider-item py-5" style="background-image: url('img/banner.jpg');">
+        
         <div class="container">
           <div class="row slider-text align-items-center justify-content-center text-center">
             <div class="col-md-7 col-sm-12 element-animate">
-              <h1 class="mb-4"></h1>             
+              <h1 class="text-white">Contate-Nos</h1>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="slider-item" style="background-image: url('img/carousel/photo2.jpeg');">
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center text-center">
-            <div class="col-md-8 col-sm-12 element-animate">
-              <h1 class="mb-4"></h1>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-      <div class="slider-item" style="background-image: url('img/carousel/photo3.jpeg');">
-        <div class="container">
-          <div class="row slider-text align-items-center justify-content-center text-center">
-            <div class="col-md-8 col-sm-12 element-animate">
-              <h1 class="mb-4"></h1>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-    <!-- END slider -->
-
-    <section class="section bg-light">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6 pr-lg-5 mb-5 mb-md-0  element-animate">
-            <div class="pr-lg-5">
-              <h2 class="text-uppercase heading border-bottom mb-4 text-left">BEM-VINDO À<br>TERRAPLENAGEM STEFANO</h2>
-              <p>Estamos prontos para atender todas as suas necessidades, para isso, contamos com uma equipe altamente qualificada e com o que há de mais moderno em equipamento no mercado oferecendo, assim, a melhor solução operacional, logística e econômica, garantindo o sucesso de sua obra.</p>
-            </div>
-          </div>
-          <div class="col-md-6  element-animate">
-            <img src="img/welcome/photo1.jpeg" alt="" class="img-fluid">
-          </div>
-        </div>
       </div>
     </section>
     
+    <section class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <form action="mail/contact_me.php" method="post">
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="name">Nome:</label>
+                  <input type="text" class="form-control form-control-lg" id="name"  name="name" required="required" data-validation-required-message="Por favor, insira seu nome.">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="phone">Telefone:</label>
+                  <input type="tel" class="form-control form-control-lg" id="phone" name="phone" required="required" data-validation-required-message="Por favor, digite seu número de telefone.">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email">Email:</label>
+                  <input type="email" class="form-control form-control-lg" id="email" name="email" required="required" data-validation-required-message="Por favor, indique o seu endereço de e-mail.">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="message">Mensagem:</label>
+                  <textarea name="message" class="form-control form-control-lg" id="message"  cols="30" rows="8" required="required" data-validation-required-message="Por favor, digite uma mensagem."></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <div id="success"></div>
+                  <input type="submit"  id="sendMessageButton"  value="Enviar Mensagem" class="btn btn-primary btn-lg btn-block" >
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-4">
+            <h5 class="text-uppercase mb-3">ENDEREÇO</h5>
+            <p class="mb-5">Avenida Brasil, 1331 <br> Terra Boa - PR <br> Brasil</p>
+            
+            <h5 class="text-uppercase mb-3">ENVIE UM E-MAIL PARA</h5>
+            <p class="mb-5"><a href="mailto:info@yourdomain.com">contato@stefanoterraplenagem.com.br</a> <br></p>
+            
+            <h5 class="text-uppercase mb-3">LIGUE-NOS</h5>
+            <p class="mb-5">Telefone: (44) 9 9988-5646 <br> Telefone: (44) 9 9994-4883</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  
     <section class="section border-t">
       <div class="container">
         <div class="row justify-content-center mb-5 element-animate">
-          <div class="col-md-8 text-center">
-            <h2 class="text-uppercase heading border-bottom mb-4">OBRAS RECENTES</h2>
-            <p><a href="works.html" class="btn btn-primary">Veja algumas obras</a></p>
+          <div class="col-md-8 text-center mb-5">
+            <h2 class="text-uppercase heading border-bottom mb-4">DEPOIMENTOS DE CLIENTES</h2>
+            <p class="mb-0 lead"></p>
           </div>
         </div>
 
-        <div class="row no-gutters">
-          <div class="col-md-4 element-animate">
-            <a class="link-thumbnail">
-              <h3>Escavação</h3>
-              <img src="img/construction/photo1.jpg" alt="Image placeholder" class="img-fluid">
-            </a>
+        <div class="row">
+          <div class="col-md-6 element-animate">
+            <div class="media d-block media-testimonial text-center">
+              <img src="img/person_2.jpg" alt="Image placeholder" class="img-fluid mb-3">
+              <p>Jefferson Vreck , <a href="https://amafil.com.br/">Amafil - Terra Boa</a></p>
+              <div class="media-body">
+                <blockquote>
+                  <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.&rdquo;</p>  
+                </blockquote>
+
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 element-animate">
-            <a class="link-thumbnail">
-              <h3>Transporte</h3>
-              <img src="img/construction/photo2.jpeg" alt="Image placeholder" class="img-fluid">
-            </a>
+
+          <div class="col-md-6 element-animate">
+            <div class="media d-block media-testimonial text-center">
+              <img src="img/person_3.jpg" alt="Image placeholder" class="img-fluid mb-3">
+                  <p>Pedro Morango, <a href="http://www.gtfoods.com.br/">GTFoods - Terra Boa</a></p>
+                  <div class="media-body">
+                    <blockquote>
+                      <p>&ldquo;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi unde impedit, necessitatibus, soluta sit quam minima expedita atque corrupti reiciendis.&rdquo;</p>  
+                    </blockquote>
+
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 element-animate">
-            <a class="link-thumbnail">
-              <h3>Escavação</h3>
-              <img src="img/construction/photo3.jpeg" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 element-animate">
-            <a class="link-thumbnail">
-              <h3>Cascalhamento de Carreadores</h3>
-              <img src="img/construction/photo4.jpeg" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 element-animate">
-            <a class="link-thumbnail">
-              <h3>Curva de Nível</h3>
-              <img src="img/construction/photo5.jpeg" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
-          <div class="col-md-4 element-animate">
-            <a class="link-thumbnail">
-              <h3>Terraplenagem</h3>
-              <img src="img/construction/photo6.jpg" alt="Image placeholder" class="img-fluid">
-            </a>
-          </div>
+
         </div>
       </div>
     </section>
-    <!-- END section -->
-
-    <section class="section">
-      <div class="container">
-
-        <div class="row justify-content-center mb-5 element-animate">
-          <div class="col-md-8 text-center">
-            <h2 class="text-uppercase heading border-bottom mb-4">Serviços</h2>
-            <p class="mb-3 lead"></p>
-          </div>
-        </div>
-
-        <div class="row mb-5">
-
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <img src="img/services/photo1.jpeg">         
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Pá Carregadeira</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <img src="img/services/photo2.jpg">
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Escavadeira</h3>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-12 mb-3 element-animate">
-            <div class="media d-block media-feature text-center">
-              <img src="img/services/photo3.jpg">
-              <div class="media-body">
-                <h3 class="mt-0 text-black">Caminhão Basculante</h3>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-        <!-- END row -->
-        <div class="row justify-content-center element-animate"> 
-          <div class="col-md-4"><p><a href="services.html" class="btn btn-primary btn-block">Ver todos os serviços</a></p></div>
-        </div>
-      </div>
-    </section>
-    <!-- END section -->
-    
+    -->
 
     <section class="container cta-overlap">
       <div class="text d-flex">
@@ -288,5 +246,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/contact_me.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
   </body>
 </html>
